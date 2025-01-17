@@ -8,11 +8,18 @@ info: |
 class: text-center
 transition: slide-left
 mdc: true
+fonts:
+  sans: 'M PLUS Rounded 1c'
+  serif: 'M PLUS Rounded 1c'
+  mono: 'M PLUS Rounded 1c'
 ---
 
 # WeWork Engineer X Talk
 
 ## 私の推しツールを聞いてくれ！
+
+<br>
+<br>
 
 WeWork 日比谷パークフロント
 
@@ -46,28 +53,34 @@ WeWork 日比谷パークフロント
 
 ---
 transition: fade-out
+fonts:
+  sans: 'M PLUS Rounded 1c'
+  serif: 'M PLUS Rounded 1c'
+  mono: 'M PLUS Rounded 1c'
 ---
 
 # くらもと is 誰？
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
-
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
-
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
+<Gravity class="absolute top-25 left-20 text-2xl" message="アプリコンテスト" />
+<Gravity class="absolute top-15 left-80 w-50" imgsrc="https://storage.googleapis.com/zenn-user-upload/wcau04bhl793ufoq5woj0978lrw6" />
+<Gravity class="absolute top-10 right-70 text-3xl" message="vue-mo.js" />
+<Gravity class="absolute top-25 right-10 text-2xl" message="アプリ名『焼き鳥』事件😱" />
+<img class="absolute top-35 right-30 w-50" src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/so-technologies/20231023/20231023100011.png" />
+<Gravity class="absolute top-40 left-5 w-50" imgsrc="https://appli.raku-za.jp/wp-content/themes/rakuzabiz/assets/img/logo01.png" />
+<Gravity class="absolute top-40 left-60 text-3xl" message="イノベーション推進事業本部" />
+<Gravity class="absolute top-50 left-80 text-2xl" message="デジタル推進部" />
+<Gravity class="absolute top-50 right-100 text-2xl" message="部長" />
+<Gravity class="absolute top-50 right-20 text-3xl" message="お菓子神社" />
+<span class="absolute top-60 left-60 text-6xl">くらもと やすひろ</span>
+<span class="absolute top-65 right-10">yum-yum COLOR</span>
+<img class="absolute top-70 left-10 w-45" src="https://tech.pepabo.com/blog/2020/05/27/flutter-hands-on/flutter_logo.png" />
+<span class="absolute bottom-40 left-20 text-2xl">グラデーション日和</span>
+<Gravity class="absolute bottom-50 right-15 text-3xl" message="ITコーディネーター" />
+<img class="absolute bottom-30 right-90 w-25" src="https://icon-icons.com/icons2/2415/PNG/512/vuejs_original_wordmark_logo_icon_146305.png" />
+<span class="absolute bottom-20 left-40 text-3xl">色彩検定１級</span>
+<span class="absolute bottom-35 left-80 text-2xl">gradient_like_css</span>
+<Gravity class="absolute bottom-30 right-10 text-4xl" message="画面消女" />
+<span class="absolute bottom-15 right-30 text-2xl">よわよわエンジニア</span>
 
 <style>
 h1 {
