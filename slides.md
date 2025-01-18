@@ -53,34 +53,30 @@ WeWork 日比谷パークフロント
 
 ---
 transition: fade-out
-fonts:
-  sans: 'M PLUS Rounded 1c'
-  serif: 'M PLUS Rounded 1c'
-  mono: 'M PLUS Rounded 1c'
 ---
 
 # くらもと is 誰？
 
-<Gravity class="absolute top-25 left-20 text-2xl" message="アプリコンテスト" />
-<Gravity class="absolute top-15 left-80 w-50" imgsrc="https://storage.googleapis.com/zenn-user-upload/wcau04bhl793ufoq5woj0978lrw6" />
-<Gravity class="absolute top-10 right-70 text-3xl" message="vue-mo.js" />
-<Gravity class="absolute top-25 right-10 text-2xl" message="アプリ名『焼き鳥』事件😱" />
+<Gravity class="flex absolute top-25 left-20 text-2xl" message="アプリコンテスト" />
+<Gravity class="flex absolute top-15 left-80 w-50" imgsrc="https://storage.googleapis.com/zenn-user-upload/wcau04bhl793ufoq5woj0978lrw6" />
+<Gravity class="flex absolute top-10 right-70 text-3xl" message="vue-mo.js" />
+<Gravity class="flex absolute top-25 right-10 text-2xl" message="アプリ名『焼き鳥』事件😱" />
 <img class="absolute top-35 right-30 w-50" src="https://cdn-ak.f.st-hatena.com/images/fotolife/s/so-technologies/20231023/20231023100011.png" />
 <Gravity class="absolute top-40 left-5 w-50" imgsrc="https://appli.raku-za.jp/wp-content/themes/rakuzabiz/assets/img/logo01.png" />
-<Gravity class="absolute top-40 left-60 text-3xl" message="イノベーション推進事業本部" />
-<Gravity class="absolute top-50 left-80 text-2xl" message="デジタル推進部" />
-<Gravity class="absolute top-50 right-100 text-2xl" message="部長" />
-<Gravity class="absolute top-50 right-20 text-3xl" message="お菓子神社" />
+<Gravity class="flex absolute top-40 left-60 text-3xl" message="イノベーション推進事業本部" />
+<Gravity class="flex absolute top-50 left-80 text-2xl" message="デジタル推進部" />
+<Gravity class="flex absolute top-50 right-100 text-2xl" message="部長" />
+<Gravity class="flex absolute top-50 right-20 text-3xl" message="お菓子神社" />
 <span class="absolute top-60 left-60 text-6xl">くらもと やすひろ</span>
 <span class="absolute top-65 right-10">yum-yum COLOR</span>
 <img class="absolute top-70 left-10 w-45" src="https://tech.pepabo.com/blog/2020/05/27/flutter-hands-on/flutter_logo.png" />
 <span class="absolute bottom-40 left-20 text-2xl">グラデーション日和</span>
-<Gravity class="absolute bottom-50 right-15 text-3xl" message="ITコーディネーター" />
+<Gravity class="flex absolute bottom-50 right-15 text-3xl" message="ITコーディネーター" />
 <img class="absolute bottom-30 right-90 w-25" src="https://icon-icons.com/icons2/2415/PNG/512/vuejs_original_wordmark_logo_icon_146305.png" />
 <span class="absolute bottom-20 left-40 text-3xl">色彩検定１級</span>
 <span class="absolute bottom-35 left-80 text-2xl">gradient_like_css</span>
-<Gravity class="absolute bottom-30 right-10 text-4xl" message="画面消女" />
-<span class="absolute bottom-15 right-30 text-2xl">よわよわエンジニア</span>
+<Gravity class="flex absolute bottom-30 right-10 text-4xl" message="画面消女" />
+<Gravity class="flex absolute bottom-15 right-30 text-2xl" message="よわよわエンジニア" />
 
 <style>
 h1 {
