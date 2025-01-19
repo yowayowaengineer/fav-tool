@@ -31,8 +31,8 @@ WeWork 日比谷パークフロント
 
 <style>
 .slidev-layout {
-  background: linear-gradient(35deg, #3AB5B0, #3D99BE, #56317A) !important;
-  background-size: 600% 600% !important;
+  background-image: linear-gradient(35deg, #D422B1, #FFCE00) !important;
+  background-size: 400% 400% !important;
   animation: GradientBackground 10s ease infinite;
 }
 
@@ -49,6 +49,7 @@ WeWork 日比谷パークフロント
     background-position: 0% 50%;
   }
 };
+
 </style>
 
 ---
@@ -57,7 +58,7 @@ transition: fade-out
 
 # くらもと is 誰？
 
-<Gravity class="flex absolute top-25 left-20 text-2xl" message="アプリコンテスト" />
+<span class="absolute top-25 left-20 text-2xl">グラデーション日和</span>
 <Gravity class="flex absolute top-15 left-80 w-50" imgsrc="https://storage.googleapis.com/zenn-user-upload/wcau04bhl793ufoq5woj0978lrw6" />
 <Gravity class="flex absolute top-10 right-70 text-3xl" message="vue-mo.js" />
 <Gravity class="flex absolute top-25 right-10 text-2xl" message="アプリ名『焼き鳥』事件😱" />
@@ -70,7 +71,7 @@ transition: fade-out
 <span class="absolute top-60 left-60 text-6xl">くらもと やすひろ</span>
 <span class="absolute top-65 right-10">yum-yum COLOR</span>
 <img class="absolute top-70 left-10 w-45" src="https://tech.pepabo.com/blog/2020/05/27/flutter-hands-on/flutter_logo.png" />
-<span class="absolute bottom-40 left-20 text-2xl">グラデーション日和</span>
+<Gravity class="flex absolute bottom-40 left-20 text-2xl" message="アプリコンテスト" />
 <Gravity class="flex absolute bottom-50 right-15 text-3xl" message="ITコーディネーター" />
 <img class="absolute bottom-30 right-90 w-25" src="https://icon-icons.com/icons2/2415/PNG/512/vuejs_original_wordmark_logo_icon_146305.png" />
 <span class="absolute bottom-20 left-40 text-3xl">色彩検定１級</span>
@@ -90,557 +91,219 @@ h1 {
 }
 </style>
 
-<!--
-Here is another comment.
--->
-
 ---
 transition: slide-up
 level: 2
+layout: image-right
+image: https://blog.yumyumcolor.com/assets/images/shikisai-kentei/color-card.jpg
 ---
 
-# Navigation
+# グラデーションにまつわるツール
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
+色彩検定を受験する際に、実技がたいへん
 
-## Keyboard Shortcuts
+テキスト上のパターンだけではイメージがわきづらかった
 
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
+そこで作ったのが [yum-yum COLOR](https://yumyumcolor.com/)
 
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+<style>
+h1 {
+  background-color: hsl(355,79%,67%);
+  background-image: linear-gradient(317deg,hsl(355,79%,67%),hsl(47,98%,50%));
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 ---
-layout: two-cols
-layoutClass: gap-16
+transition: slide-up
 ---
 
-# Table of contents
+# ランダムにグラデーションを生成したい
 
-You can use the `Toc` component to generate a table of contents for your slides:
 
-```html
-<Toc minDepth="1" maxDepth="1" />
-```
+スライドの最初にお見せしたグラデーションのアニメーション。
+あれは [FUZE](https://fuze.8bit.codes/) という Web サービスで作成しました。
 
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
+好みのグラデーションを簡単に作りたい……
+そんなときに [グラデーション日和](https://fav-gradation.yumyumcolor.com/) がおすすめです！
 
-::right::
+<style>
+h1 {
+  background-color: hsl(132,71%,69%);
+  background-image: linear-gradient(260deg,hsl(132,71%,69%),hsl(195,83%,64%));
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
-<Toc text-sm minDepth="1" maxDepth="2" />
+---
+transition: fade-out
+class: text-center
+---
+
+# CSSを編集するエディター
+
+Chrome！！
+
+<style>
+h1 {
+  background-color: hsl(56,79%,80%);
+  background-image: linear-gradient(86deg,hsl(56,79%,80%),hsl(172,24%,36%));
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 ---
 layout: image-right
 image: https://cover.sli.dev
 ---
 
-# Code
+# Flutterにおけるグラデーション
 
-Use code snippets and get the highlighting directly, and even types hover!
+`Flutter` でのグラデーションって非常に可読性が低い。
+わかりやすい例が [こちら](https://qiita.com/azukisiromochi/items/bedf81bae8f0470c58a3#comment-02a8b58a5f0ca3ca95c5) 。
 
-```ts {all|5|7|7-8|10|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
+そこでできたのが [gradient_like_css](https://pub.dev/packages/gradient_like_css) だ！
 
-import { computed, ref } from 'vue'
-
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
-
-doubled.value = 2
-```
-
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
-
-<!-- Footer -->
-
-[Learn more](https://sli.dev/features/line-highlighting)
-
-<!-- Inline style -->
 <style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
+h1 {
+  background-color: hsl(207,78%,65%);
+  background-image: linear-gradient(120deg,hsl(207,78%,65%),hsl(3,96%,81%));
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 </style>
-
-<!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
--->
 
 ---
 level: 2
 ---
 
-# Shiki Magic Move
+# gradient_like_css によるコードの変化
 
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
-
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
-
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
+```css
+/* With CSS */
+div { background: linear-gradient(162.42deg, #FFE5C5 17.61%, #D2B38B 50.22%, #F1DDC3 83.52%); }
 ```
 
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
+````md magic-move {lines: true}
+```ts {*|4-5|6-12|13-19|*}
+/// With Flutter
+decoration: BoxDecoration(
+  gradient: LinearGradient(
+    begin: Alignment(-0.5, -1),   // 計算めんどうで適当です
+    end: Alignment(0.5, 1),          // （同上）
+    colors: [
+      const Color(0xffFFE5C5),
+      const Color(0xffFFE5C5),
+      const Color(0xffD2B38B),
+      const Color(0xffF1DDC3),
+      const Color(0xffF1DDC3),
+    ],
+    stops: const [
+      0,
+      0.1761,
+      0.5022,
+      0.8352,
+      1,
+    ],
+  ),
+),
 ```
 
 ```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
-```
-
-Non-code blocks are ignored.
-
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
-</script>
+/// Using gradient_like_css
+decoration: BoxDecoration(
+  gradient: linearGradient(162.42, ['#FFE5C5 17.61%', '#D2B38B 50.22%'], '#F1DDC3 83.52%']),
+),
 ```
 ````
 
+見やすいね！！
+（ `CSS` 使っている人なら）
+
+<style>
+h1 {
+  background-color: hsl(259,93%,57%);
+  background-image: linear-gradient(37deg,hsl(259,93%,57%),hsl(175,53%,51%));
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
 ---
 
-# Components
+# まとめる！
 
-<div grid="~ cols-2 gap-4">
-<div>
+グラデーションにまつわる（まつわらないものも）推しツールを紹介してきました。
 
-You can use Vue components directly inside your slides.
+AI とかもあるけど、世の中にあるものだけじゃ絶妙にマッチしない…
 
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
+そんな時は自分で作っちゃえ！
 
-```html
-<Counter :count="10" />
-```
+車輪の再開発なんてくそくらえ、
+（良い子のみんなは業務で真似しちゃだめだぞ）
 
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
+好きなものを好きなように作る
 
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
+それが……
 
-</div>
-<div>
+エンジニアだろ！！
 
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
+<style>
+h1 {
+  background-color: hsl(350,98%,49%);
+  background-image: linear-gradient(311deg,hsl(350,98%,49%),hsl(253,49%,81%));
+  background-size: 50%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 ---
 class: px-20
 ---
 
-# Themes
+# 紹介した推しツール
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+LTで登場した推しツールを紹介！
 
-<div grid="~ cols-2 gap-2" m="t-2">
+|                                                                     |                                                     |
+| ------------------------------------------------------------------- | --------------------------------------------------- |
+| [FUZE](https://fuze.8bit.codes/)                                    | グラデーションのアニメーションを生成するサイト          |
+| [Wappalyzer](https://www.wappalyzer.com/)                           | 閲覧しているサイトに使われている技術を調べるChrome拡張  |
+| [yum-yum COLOR](https://yumyumcolor.com/)                           | PCCS を用いた配色を生成するサイト（自作）              |
+| [グラデーション日和](https://fav-gradation.yumyumcolor.com/)          | ランダムなグラデーションを生成するサイト（自作）        |
+| [Chrome DevTools](https://developer.chrome.com/docs/devtools?hl=ja) | Chromeの開発者ツール                                 |
+| [Slidev](https://sli.dev/)                                          | Vue3 & Vite 制のスライドツール                       |
 
-```yaml
----
-theme: default
----
-```
 
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
-</div>
-
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
-
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you click the slide:
-
-```html
-<div v-click>This shows up when you click the slide.</div>
-```
-
-</div>
-
-<br>
-
-<v-click>
-
-The <span v-mark.red="3"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="4">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
-
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
-
-</v-click>
-
-<div mt-20 v-click>
-
-[Learn more](https://sli.dev/guide/animations#click-animation)
-
-</div>
-
----
-
-# Motions
-
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
-  Slidev
-</div>
-```
-
-<div class="w-60 relative">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
+<style>
+h1 {
+  background-color: #FFE5C5;
+  background-image: linear-gradient(162.42deg, #FFE5C5 17.61%, #D2B38B 50.22%, #F1DDC3 83.52%);
+  background-size: 40%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 30, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn more](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box. Powered by [KaTeX](https://katex.org/).
-
-<div h-3 />
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{aligned}
-\nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
-\nabla \cdot \vec{B} &= 0 \\
-\nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} \\
-\nabla \times \vec{B} &= \mu_0\vec{J} + \mu_0\varepsilon_0\frac{\partial\vec{E}}{\partial t}
-\end{aligned}
-$$
-
-[Learn more](https://sli.dev/features/latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
-
----
-foo: bar
-dragPos:
-  square: 691,32,167,_,-16
----
-
-# Draggable Elements
-
-Double-click on the draggable elements to edit their positions.
-
-<br>
-
-###### Directive Usage
-
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
-
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <div class="i-carbon:arrow-up" />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="663,206,261,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
-###### Draggable Arrow
-
-```md
-<v-drag-arrow two-way />
-```
-
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
-
----
-src: ./pages/imported-slides.md
-hide: false
----
-
----
-
-# Monaco Editor
-
-Slidev provides built-in Monaco Editor support.
-
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
-
-const arr = ref(emptyArray(10))
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
-
----
-layout: center
-class: text-center
----
-
-# Learn More
-
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
-
-<PoweredBySlidev mt-10 />
+</style>
