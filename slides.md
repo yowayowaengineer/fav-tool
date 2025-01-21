@@ -450,3 +450,31 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 </style>
+
+---
+transition: fade-out
+layout: center
+class: text-center
+---
+
+# Thanks !!
+
+　
+
+このスライドは公開しているので、ご自由にご覧ください！
+
+<br>
+
+<img src="/image/qr-code.png" class="ml-5 h-70 rounded shadow" />
+
+<style>
+h1 {
+  background-color: hsl(261,82%,36%);
+  background-image: linear-gradient(270deg,hsl(261,82%,36%),hsl(355,67%,78%));
+  background-size: 150%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
