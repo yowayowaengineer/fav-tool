@@ -280,7 +280,7 @@ decoration: BoxDecoration(
 ```ts
 /// Using gradient_like_css
 decoration: BoxDecoration(
-  gradient: linearGradient(162.42, ['#FFE5C5 17.61%', '#D2B38B 50.22%'], '#F1DDC3 83.52%']),
+  gradient: linearGradient(162.42, ['#FFE5C5 17.61%', '#D2B38B 50.22%', '#F1DDC3 83.52%']),
 ),
 ```
 ````
