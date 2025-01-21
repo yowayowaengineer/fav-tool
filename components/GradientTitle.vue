@@ -1,9 +1,6 @@
 <template>
   <div class="title" style="--duration: 1s">
-
     <span style="--delay: 0.5s">{{ message }}</span>
-
-    
   </div>
 </template>
 
@@ -24,7 +21,7 @@ const props = defineProps<{
   animation: reveal 1s var(--total) forwards;
 }
 .title span::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -33,7 +30,8 @@ const props = defineProps<{
   transform: scaleX(0);
   transform-origin: left;
   background-image: v-bind(backgroundColor);
-  animation: rollIn var(--duration) var(--delay) forwards,
+  animation:
+    rollIn var(--duration) var(--delay) forwards,
     rollOut var(--duration) var(--total) forwards;
 }
 .title span:nth-child(2)::after {

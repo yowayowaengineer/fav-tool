@@ -14,10 +14,10 @@ const props = defineProps<{
 
 <style lang="css" scoped>
 .test {
-  animation: falling 5s 5s forwards;
+  animation: falling 5s 30s forwards;
 }
 .test2 {
-  animation: fallingLeaves 7s 10s forwards;
+  animation: fallingLeaves 7s 40s forwards;
 }
 
 @keyframes falling {

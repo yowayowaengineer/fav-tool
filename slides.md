@@ -425,17 +425,19 @@ transition: fade-out
 
 # 紹介した推しツール
 
+　
+
 LTで登場した推しツールを紹介！
 
-|                                                                     |                                                        |
-| ------------------------------------------------------------------- | ------------------------------------------------------ |
-| [FUZE](https://fuze.8bit.codes/)                                    | グラデーションのアニメーションを生成するサイト         |
-| [Wappalyzer](https://www.wappalyzer.com/)                           | 閲覧しているサイトに使われている技術を調べるChrome拡張 |
-| [yum-yum COLOR](https://yumyumcolor.com/)                           | PCCS を用いた配色を生成するサイト（自作）              |
-| [グラデーション日和](https://fav-gradation.yumyumcolor.com/)        | ランダムなグラデーションを生成するサイト（自作）       |
-| [Chrome DevTools](https://developer.chrome.com/docs/devtools?hl=ja) | Chromeの開発者ツール                                   |
-| [Slidev](https://sli.dev/)                                          | Vue3 & Vite 制のスライドツール                         |
-
+|                                                                     |                                                            |
+| ------------------------------------------------------------------- | ---------------------------------------------------------- |
+| [FUZE](https://fuze.8bit.codes/)                                    | グラデーションのアニメーションを生成するサイト             |
+| [Wappalyzer](https://www.wappalyzer.com/)                           | 閲覧しているサイトに使われている技術を調べるChrome拡張     |
+| [yum-yum COLOR](https://yumyumcolor.com/)                           | PCCS を用いた配色を生成するサイト（自作）                  |
+| [グラデーション日和](https://fav-gradation.yumyumcolor.com/)        | ランダムなグラデーションを生成するサイト（自作）           |
+| [Chrome DevTools](https://developer.chrome.com/docs/devtools?hl=ja) | Chromeの開発者ツール                                       |
+| [gradient_like_css](https://pub.dev/packages/gradient_like_css)     | CSSのようにグラデーションを書けるFlutterプラグイン（自作） |
+| [Slidev](https://sli.dev/)                                          | Vue3 & Vite 制のスライドツール                             |
 
 <style>
 h1 {

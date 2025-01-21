@@ -55,15 +55,14 @@ const decrease = () => {
       angle: randomInRange(55, 125),
       spread: randomInRange(50, 70),
       particleCount: randomInRange(50, 100),
-      origin: { y: 0.6 }
+      origin: { y: 0.6 },
     })
   }
 }
 
 const randomInRange = (min, max) => {
-  return Math.random() * (max - min) + min;
+  return Math.random() * (max - min) + min
 }
-
 
 const drawSpeed = (speedValue) => {
   const firstDigit = getFirstDigit(speedValue)
@@ -114,7 +113,7 @@ const getSecondDigit = (num) => {
   if (num < 10) {
     return Zero
   } else {
-    const digit = (num < 100 ) ? num.toString()[0] : num.toString()[1]
+    const digit = num < 100 ? num.toString()[0] : num.toString()[1]
     switch (digit) {
       case '1':
         return One
@@ -147,7 +146,7 @@ const getThirdDigit = (num) => {
   if (num < 10) {
     digit = num.toString()[0]
   } else {
-    digit = (num < 100 ) ? num.toString()[1] : num.toString()[2]
+    digit = num < 100 ? num.toString()[1] : num.toString()[2]
   }
 
   switch (digit) {
